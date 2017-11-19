@@ -134,7 +134,7 @@ if __name__ == '__main__':
         default='yes,no,up,down,left,right,on,off,stop,go',
         help='Words to use (others will be added to an unknown label)', )
     parser.add_argument(
-        '--output_file', type=str, help='Where to save the frozen graph.')
+        '--output_file', type=str, default='mytest', help='Where to save the frozen graph.')
 
     FLAGS, _ = parser.parse_known_args()
     prepare_model_parameters()
